@@ -1,90 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TimPiksel</title>
-  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest">
-  <style>
-    body {
-      scroll-behavior: smooth;
-    }
-    header, section, footer {
-      padding: 4rem 1rem;
-    }
-    nav ul {
-      margin: 0;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    .socials a {
-      margin: 0 0.5rem;
-      text-decoration: none;
-    }
-    #hero svg {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimPiksel</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .main-center-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-center-container>* {
+            width: 100%;
+            max-width: 800px;
+        }
+
+
+        #hero {
+            text-align: center;
+        }
+
+        #hero svg {
+            display: block;
+            margin: 2rem auto;
+            max-width: 320px;
+            height: auto;
+        }
+
+
+
+        header,
+        section,
+        footer {
+            padding: 4rem 1rem;
+        }
+
+        nav ul {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .socials a {
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        #hero svg {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <nav class="container">
-      <ul>
-        <li>
-          <img src="images/tp-512.png" alt="TimPiksel Logo" style="height:2rem;vertical-align:middle;margin-right:0.5rem;">
-          <strong>TimPiksel</strong>
-        </li>
-      </ul>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="container">
+            <ul>
+                <li>
+                    <img src="images/tp-512.png" alt="TimPiksel Logo"
+                        style="height:2rem;vertical-align:middle;margin-right:0.5rem;">
+                    <strong>TimPiksel</strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section id="hero" class="container">
-      <h1>Welcome to TimPiksel</h1>
-      <!-- Hero Illustration -->
-      <svg width="320" height="160" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="60" cy="80" r="32" fill="#6c63ff"/>
-        <rect x="110" y="48" width="48" height="64" rx="10" fill="#00bfae"/>
-        <ellipse cx="208" cy="80" rx="28" ry="40" fill="#ffb300"/>
-        <rect x="256" y="64" width="32" height="32" rx="6" fill="#ff6584"/>
-    
-      </svg>
-      <p>We are a creative digital team ready to help you build a strong and engaging visual identity.</p>
-      <a href="#products" class="contrast">See Our Products</a>
-    </section>
+    <div class="main-center-container">
 
-    <section id="products" class="container">
-      <h2>Our Products</h2>
-      <ul>
-        <li><strong><a href="https://timpiksel.etsy.com/" target="_blank">Poster Design</a></strong> - Wall decor for your home, office, or interior design.</li>
-        <li><strong>Logo Design</strong> - Build a visual identity for your brand.</li>
-        <li><strong>Website UI/UX</strong> - Modern and user-friendly interface design.</li>
-        <li><strong>Social Media Content</strong> - Engaging visuals for Instagram, Facebook, and more.</li>
-      </ul>
-    </section>
+        <main>
+            <section id="hero" class="container">
+                <h1>Welcome to TimPiksel</h1>
+                <!-- Hero Illustration -->
+                <svg width="320" height="160" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="80" r="32" fill="#6c63ff" />
+                    <rect x="110" y="48" width="48" height="64" rx="10" fill="#00bfae" />
+                    <ellipse cx="208" cy="80" rx="28" ry="40" fill="#ffb300" />
+                    <rect x="256" y="64" width="32" height="32" rx="6" fill="#ff6584" />
 
-    <section id="about" class="container">
-      <h2>About Us</h2>
-      <p>TimPiksel consists of designers and developers dedicated to creating impactful visual solutions. We believe great design can strengthen messages and expand reach.</p>
-    </section>
-  </main>
+                </svg>
+                <p>We are a creative digital team ready to help you build a strong and engaging visual identity.</p>
+            </section>
 
-  <footer class="container">
-    <p>&copy; 2025 TimPiksel | <a href="https://piksel.team">piksel.team</a></p>
-    <div class="socials">
-      <a href="https://timpiksel.etsy.com/" target="_blank">Etsy Shop</a>
-      <a href="https://instagram.com/timpiksel" target="_blank">Instagram</a>
-      <a href="https://twitter.com/timpiksel" target="_blank">Twitter</a>
-      <a href="https://linkedin.com/company/timpiksel" target="_blank">LinkedIn</a>
+            <section id="products" class="container">
+                <h2>Our Products</h2>
+                <ul>
+                    <li><strong><a href="https://timpiksel.etsy.com/" target="_blank">Poster Design</a></strong> - Wall
+                        decor for your home, office, or interior design.</li>
+                    <li><strong>Logo Design</strong> - Build a visual identity for your brand.</li>
+                    <li><strong>Website UI/UX</strong> - Modern and user-friendly interface design.</li>
+                    <li><strong>Social Media Content</strong> - Engaging visuals for Instagram, Facebook, and more.</li>
+                </ul>
+            </section>
+
+            <section id="about" class="container">
+                <h2>About Us</h2>
+                <p>TimPiksel consists of designers and developers dedicated to creating impactful visual solutions. We
+                    believe great design can strengthen messages and expand reach.</p>
+            </section>
+        </main>
+
+        <footer class="container">
+            <p>&copy; 2025 TimPiksel | <a href="https://piksel.team">piksel.team</a></p>
+            <div class="socials">
+                <a href="https://timpiksel.etsy.com/" target="_blank">Etsy Shop</a>
+                <a href="https://instagram.com/timpiksel" target="_blank">Instagram</a>
+                <a href="https://twitter.com/timpiksel" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/company/timpiksel" target="_blank">LinkedIn</a>
+            </div>
+        </footer>
     </div>
-  </footer>
 </body>
+
 </html>
